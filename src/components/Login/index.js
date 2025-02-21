@@ -4,11 +4,10 @@ import { SignInPage } from '@toolpad/core/SignInPage';
 import { useTheme } from '@mui/material/styles';
 
 // preview-start
-const providers = [{ id: '1', name: {email : "tarunvamsi666@gmail.com", password : "9492804969"} }];
+const providers = [{ id: 'credentials', name: 'Email and Password' }];
 // preview-end
 
 const signIn = async (provider, formData) => {
-
   const promise = new Promise((resolve) => {
     setTimeout(() => {
       alert(
@@ -18,7 +17,6 @@ const signIn = async (provider, formData) => {
     }, 300);
   });
   return promise;
-
 };
 
 export default function CredentialsSignInPage() {
