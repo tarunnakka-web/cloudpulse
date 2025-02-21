@@ -24,6 +24,7 @@ export default function CredentialsSignInPage() {
   return (
     // preview-start
     <AppProvider theme={theme}>
+      <h1 >SIGNIN</h1>
       <SignInPage
         signIn={signIn}
         providers={providers}
