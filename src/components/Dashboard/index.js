@@ -29,7 +29,7 @@ export default function Dashboard() {
       <Grid container spacing={3}>
         {cardItems.map((card) => ( 
               <Grid item xs={12} sm={6} md={4}>
-              <InfoCard icon={card.icon} title={card.title} description={card.description} />
+              <InfoCard key={card.title} icon={card.icon} title={card.title} description={card.description} />
             </Grid>
         ))}
       </Grid>
