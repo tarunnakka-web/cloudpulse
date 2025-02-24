@@ -142,7 +142,7 @@ export default function AdvancedResourceTable() {
         <TablePagination
           rowsPerPageOptions={[5, 10, 15]}
           component="div"
-          sx={{color : "white"}}
+          sx={{color : "black"}}
           count={sortedResources.length}
           rowsPerPage={rowsPerPage}
           page={page}

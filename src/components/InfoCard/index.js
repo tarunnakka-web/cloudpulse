@@ -2,9 +2,10 @@ import React from "react";
 import { Card, CardContent, Typography, Box } from "@mui/material";
 import {Link} from "react-router-dom";
 
-export default function InfoCard({ icon: Icon, title, description }) {
+export default function InfoCard({ icon: Icon, title, description}) {
+
   return (
-    <Link to={`/${title}`} style={{ textDecoration: "none" }}>
+    <Link to={`${title}`} style={{ textDecoration: "none" }}>
         <Card sx={{ maxWidth: 345, height: 200, borderRadius: 2, boxShadow: 3, padding: 2, display: "flex", alignItems: "center" }}>
       <Box sx={{ marginRight: 2, display: "flex", alignItems: "center", justifyContent: "center" }}>
         <Icon sx={{ fontSize: 40, color: "green" }} />
